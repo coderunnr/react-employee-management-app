@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
 
 import ReduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import firebase from 'firebase';
 import reducers from './reducers';
-import LoginForm from './components/LoginForm';
 import Router from './Router';
 
 class App extends Component {
@@ -19,15 +17,7 @@ class App extends Component {
             projectId: 'geniusclub-d42ea',
             storageBucket: 'geniusclub-d42ea.appspot.com',
             messagingSenderId: '817859667998'
-          });
-
-        // firebase.auth().onAuthStateChanged((user) => {
-        //     if (user) {
-        //         this.setState({ loggedIn: true });
-        //     } else {
-        //         this.setState({ loggedIn: false });
-        //     }
-        // });          
+          });       
     }
 
     render() {
