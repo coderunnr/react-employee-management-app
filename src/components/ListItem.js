@@ -6,7 +6,7 @@ import { CardSection } from './common';
 class ListItem extends Component {
 
     onRowPressed() {
-        Actions.employeeCreate({ employee: this.props.employee });
+        Actions.employeeEdit({ employee: this.props.employee });
     }
 
     render() {
